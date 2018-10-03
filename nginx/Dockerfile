@@ -2,6 +2,8 @@ FROM nginx:1.11
 
 RUN mkdir /etc/nginx/sites-available && rm /etc/nginx/conf.d/default.conf
 ADD nginx.conf /etc/nginx/
+ADD allow_cross.conf /etc/nginx/
+ADD proxy_params /etc/nginx/
 
 COPY scripts /root/scripts/
 COPY certs /etc/ssl/
