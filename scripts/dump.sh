@@ -10,3 +10,6 @@ mv /tmp/tmp/dump /tmp/dump
 rm -rf /tmp/tmp 
 mongorestore --dir=/tmp/dump --drop 2>>/tmp/logs
 rm -rf /tmp/dump 
+
+scp me:/var/lib/redis/dump.rdb /data/redis 1>>/tmp/logs
+chmod 666 /data/redis/dump.rdb
