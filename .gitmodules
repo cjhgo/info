@@ -1,0 +1,6 @@
+[submodule "pda"]
+	path = pda
+	url = git:root/pda.git
+[submodule "www"]
+	path = www
+	url = git:root/www.git
