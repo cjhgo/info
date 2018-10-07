@@ -16,6 +16,11 @@ RUN apt-get update \
     ssh \
     && apt-get autoremove \
     && apt-get clean
+# RUN apt-get update \
+#     && apt-get install -y \
+#     mongodb-org-tools \
+#     cron \
+#     redis-tools
 RUN pip install -U "setuptools==3.4.1" \
                     "gunicorn" \
                     "Flask==0.12.4" \
