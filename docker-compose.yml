@@ -37,3 +37,10 @@ services:
             - "6379:6379"
         volumes:
             - /data/redis:/data
+    project:
+        build:
+            context: ./project
+        command: /usr/bin/supervisord -n
+        network_mode: "host"
+        volumes:
+            - /data/python/logs:/data/python/logs
