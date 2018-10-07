@@ -18,7 +18,7 @@ RUN apt-get update \
     && apt-get clean
 RUN pip install -U "setuptools==3.4.1" \
                     "gunicorn" \
-                    "Flask==0.10.1" \
+                    "Flask==0.12.4" \
                     "Fabric==1.12.0" \
                     "WTForms==2.2.1" \
                     "qiniu==7.0.3" \
