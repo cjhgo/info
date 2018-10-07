@@ -1,0 +1,12 @@
+Flask==0.10.1
+Fabric==1.12.0
+WTForms==2.2.1
+qiniu==7.0.3
+pymongo==2.7.1
+Flask_Admin==1.5.2
+Fabric==1.12.0
+motor==0.3.3
+tornado==4.3
+Werkzeug==0.9.6
+tornadis==0.7.0
+beautifulsoup4==4.6.3
